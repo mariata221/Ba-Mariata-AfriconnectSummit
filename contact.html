@@ -13,9 +13,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <section class="fil-ariane">
+    <header class="nav-bar">
   <nav>
-    <h2>AfriconnectSummit 2026</h2>
+    <h2 class="logo"><i>AfriconnectSummit 2026</i></h2>
     <div>
     <button class="navbar-toggle">
         <span class="bar"></span>
@@ -23,47 +24,49 @@
         <span class="bar"></span>
     </button>
     </div>
+    <div class="linkNav">
     <ul>
         <li><a href="index.html">Acceuil</a></li>
         <li><a href="programme.html">Programme</a></li>
         <li><a href="intervenants.html">Intervenant</a></li>
         <li><a href="contact.html">Inscription & Contact</a></li>
     </ul>
-    <button><i class="bi bi-moon-stars-fill"></i></button> 
+    
+    <button><i class="bi bi-moon-stars-fill"></i></button>
+    </div> 
   </nav>
   </header>
  <!-- Le contenu de la page sera ajoute ici -->
- <section>
-    <div>
-        <div>
-            <a href="index.html">Acceuil</a> <span> > </span> <span>Contact</span>
+ 
+    <div class="ariane">
+        <div class="fil">
+            <a href="index.html">Acceuil</a> <span> <span class="pro">Contact</span>
         </div>
-        <h1>Réservez votre place au sommet</h1>
+        <h1>Réserver votre place au sommet.</h1>
     </div>
  </section>
- <section>
+ <section class="sect-contact">
     
     <div>
         Merci ! Votre inscripion a été enrigistrée.Un email de confirmation vous sera envoyé.
     </div>
-    <div>
-        <div>
+    <div id="container-form">
+    
+        <div class="infos">
             <h2>Nos Informations</h2>
 
             <div>
-                <p ><b>Email :</b> contacthello@AfriconnectSummit.com</p>
-                <p><b>Téléphone :</b> +221 77 555 57 34</p>
-                <p><b>Adresse :</b> Dakar,Sénégal</p>
+                <p ><b> <i class="bi bi-envelope-arrow-down-fill"></i> Email :</b> contacthello@AfriconnectSummit.com</p>
+                <p><b> <i class="bi bi-telephone-fill"></i> Téléphone :</b> +221 77 555 57 34</p>
+                <p><b> <i class="bi bi-geo-alt-fill"></i> Adresse :</b> Dakar,Sénégal</p>
             </div>
 
         </div>
-    </div>
-
-    <div>
-    <form action="">
-    <div>
+    
+<form action="">
+    
         <h2>Inscription</h2>
-    </div>
+    
     <div>
          <label for="">Nom complet</label>
         <input type="text">
@@ -71,7 +74,7 @@
 
     <div>
         <label for="">Email</label>
-        <input type="text">
+        <input type="email">
     </div>
 
     <div>
@@ -119,91 +122,128 @@
                                     
     </div>
 
-    <div>
-        <button type="submit">Envoyer</button>
+    <div id="btn-form">
+        <button type="submit"> Envoyer</button>
     </div>
     </form>
+    
     </div>
 
    
     
  </section>
 
- <section>
-    <div>
+ <section class="faq">
+    <div class="question-reponse">
+    <div class="title-faq">
         <h2>Questions fréquentes</h2>
     </div>
-    <div>
-        <div>
+    <div class="Questions">
+        <details>
             
-            <button>Le billet inclut-il les repas ?
-            <i class="bi bi-plus-lg"></i>
-            </button>
-        </div>
-        <div>
+            <summary>
+                <span class="num">01</span>
+                <span class="text">Le billet inclut-il les repas ?</span>
+                 <i class="bi bi-plus"></i>
+                
+           
+            </summary>
             <p>Oui,le dejouner networking est inclus chaque jour,ainsi que les pauses café du matin et de l'après-midi.</p>
-        </div>
+        </details>
+        
 
 
-         <div>
+         <details>
             
-            <button>Puis-je obtenir une lettre d'invitation pour un vida ?
-            <i class="bi bi-plus-lg"></i>
-            </button>
-        </div>
-        <div>
-            <p>Oui,Une fois votre inscription confirmée,vous pourrez demander une lettre d'invitation officielle depuis votre espace participant.</p>
-        </div>
-
-
-         <div>
+            <summary>
+                <span class="num">02</span>
+                
+                <span class="text">Puis-je obtenir une lettre d'invitation pour un vida ?</span>
+                <i class="bi bi-plus"></i>
             
-            <button> sessions sont-elles enrigistrées ?
-           <i class="bi bi-plus-lg"></i>
-           </button>
-        </div>
-        <div>
+            </summary>
+             <p>Oui,Une fois votre inscription confirmée,vous pourrez demander une lettre d'invitation officielle depuis votre espace participant.</p>
+         </details>
+        
+
+
+         <details>
+            
+            <summary>
+                <span class="num">03</span>
+                 
+                <span class="text">sessions sont-elles enrigistrées ?</span>
+                <i class="bi bi-plus"></i>
+           
+            </summary>
             <p>La majorité des sessions en Auditorium A seront filmées et rendu disponibles aux participant inscrits après l'évenement.</p>
-        </div>
+         </details>
+        
 
 
-         <div>
+         <details>
             
-            <button>Existe-t-il un tarif pour les étudiants ?
-            <i class="bi bi-plus-lg"></i>
-            </button>
-        </div>
-        <div>
+            <summary>
+                <span class="num">04</span>
+                
+                <span class="text">Existe-t-il un tarif pour les étudiants ?</span>
+                <i class="bi bi-plus"></i>
+           
+            </summary>
             <p>Oui, Un tarif réduit de 50% est proposéaux étudiants sur présentation d'une carte étudiante valide le jour de l'événement.</p>
-        </div>
+         </details>
+        
 
 
-         <div>
+         <details>
             
-            <button>Puis-je modifier mon inscription après l'avoir soumise ?
-            <i class="bi bi-plus-lg"></i>
-            </button>
-        </div>
-        <div>
+            <summary>
+                <span class="num">05</span>
+                
+                <span class="text">Puis-je modifier mon inscription après l'avoir soumise ?</span>
+                <i class="bi bi-plus"></i>
+            
+            </summary>
             <p>Bien sûr ,contactez-,=nous par email avant le 1er novembre 2026 et nous mettrons à jour vos informations sans frais supplémentaires.</p>
-        </div>
+         </details>
+       
+    </div>
     </div>
  </section>
  <section>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d507957.05196206475!2d-0.5680515929856614!3d5.937469366093552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x29fae0720199f39d%3A0xc8b513db71d2add4!2sEntrepreneur!5e0!3m2!1sfr!2ssn!4v1783897112514!5m2!1sfr!2ssn" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
  </section>
 
+ <section class="sect-footer">
  <footer>
+    <div class="footer">
+    <div>
+        <h2 class="logo"><i>AfriconnectSummit 2026</i></h2>
+        <p>Le sommet qui connecte les bâtisseurs de l'Afrique de demain.</p>
+    </div>
+    <div>
+        <h4>Navigations</h4>
+        <ul>
+            <li><a href="index.html">Acceuil</a></li>
+            <li><a href="programme.html">Programme</a></li>
+            <li><a href="intervenants.html">Intervenant</a></li>
+            <li><a href="contact.html">Inscription & Contact</a></li>
+            
+        </ul>
+    </div>
   <div>
+    <h4>Suivez-nous :</h4>
    <a href=""><i class="bi bi-twitter-x"></i></a>
    <a href=""><i class="bi bi-facebook"></i></a>
    <a href=""><i class="bi bi-threads"></i></a>
   </div>
-  <div>
+  </div>
+  <hr>
+  <div class="copy">
     <p>&Copyright 2026 AfriconnectSummit.Tous droits réservés.</p>
   </div>
-  <button><i class="bi bi-arrow-up-circle "></i></button>
 </footer>
+</section>
  <!-- Votre script JavaScript -->
  <script src="js/main.js"></script>
  </body>

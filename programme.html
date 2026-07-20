@@ -12,9 +12,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <section class="fil-ariane">
+    <header class="nav-bar">
   <nav>
-    <h2>AfriconnectSummit 2026</h2>
+    <h2 class="logo"><i>AfriconnectSummit 2026</i></h2>
     <div>
     <button class="navbar-toggle">
         <span class="bar"></span>
@@ -22,6 +23,7 @@
         <span class="bar"></span>
     </button>
     </div>
+    <div class="linkNav">
     <ul>
         <li><a href="index.html">Acceuil</a></li>
         <li><a href="programme.html">Programme</a></li>
@@ -29,13 +31,14 @@
         <li><a href="contact.html">Inscription & Contact</a></li>
     </ul>
     <button><i class="bi bi-moon-stars-fill"></i></button> 
+    </div>
   </nav>
   </header>
  <!-- Le contenu de la page sera ajoute ici -->
- <section>
-    <div>
-        <div>
-            <a href="index.html">Acceuil</a> <span> > </span> <span>Programme</span>
+ 
+    <div class="ariane">
+        <div class="fil">
+            <a href="index.html">Acceuil</a> <span class="pro">Programme</span>
          </div>
         <div>
             <h1>Trois jours pour tout changer.</h1>
@@ -45,22 +48,22 @@
     </div>
  </section>
 
- <section>
+ <section class="planning">
 
-    <div>
+    <div class="titre-planning">
         
-        <h2>Le planning,jour par jour</h2>
+        <h2>Le planning,jour par jour.</h2>
         <p>Sélectionner un jour pour afficher le planning complet des sessions.</p>
     </div>
-    <div>
+    <div class="onglet">
         <button>Jour 1 - 20 Sept</button>
         <button>jour 2 - 18 Sept</button>
         <button>Jour 3 - 25 Sept</button>
     </div>
             <!-- JOURS 1 -->
 
-    <div>
-        <table>
+    <div class="onglet1">
+        <table class="tableau">
             <thead>
                 <th>Heure</th>
                 <th>Sessions</th>
@@ -117,8 +120,8 @@
             <!-- JOUR 2 -->
 
 
-    <div>
-        <table>
+    <div class="onglet2">
+        <table class="tableau">
             <thead>
                 <th>Heure</th>
                 <th>Sessions</th>
@@ -175,8 +178,8 @@
 
             <!-- JOUR 3 -->
 
-    <div>
-        <table>
+    <div class="onglet3">
+        <table class="tableau">
             <thead>
                 <th>Heure</th>
                 <th>Sessions</th>
@@ -234,44 +237,64 @@
  </section>
 
 
- <section>
+ <section class="sect-thema">
     <div>
-        <h2>Quatre thématiques structurales de conférence</h2>
+        <h1>Quatre thématiques structurales de conférence</h1>
     </div>
-    <div>
-        <div>
-            <span></span>
+    <div class="thematique">
+        <div class="thema1">
+            <span><i class="bi bi-robot"></i></span>
             <h3>IA & Tech</h3>
             <p>Applications concrètes de l'intelligence artificielle dans l'agriculture, la santé et l'éducation.</p>
         </div>
-        <div>
-            <span></span>
+        <div class="thema1">
+            <span><i class="bi bi-shield-lock"></i></span>
             <h3>Data & Souveraineté</h3>
             <p>Gouvernance des données, cybersécurité et infrastructures numériques locales.</p>
         </div>
-        <div>
-            <span></span>
+        <div class="thema1">
+            <span><i class="bi bi-graph-up-arrow"></i></span>
             <h3>Business & Investissement</h3>
             <p>Financement, scale-up et stratégies d'expansion pour les entreprises africaines à fort potentiel.</p>
         </div>
-        <div>
-            <span></span>
+        <div class="thema1">
+            <span><i class="bi bi-palette-fill"></i></span>
             <h3>Design & Produit</h3>
             <p>Concevoir des produits numériques pensés pour les usages et réalités du continent.</p>
         </div>
     </div>
  </section>
+ <section class="sect-footer">
  <footer>
+    <div class="footer">
+    <div>
+        <h2 class="logo"><i>AfriconnectSummit 2026</i></h2>
+        <p>Le sommet qui connecte les bâtisseurs de l'Afrique de demain.</p>
+    </div>
+    <div>
+        <h4>Navigations</h4>
+        <ul>
+            <li><a href="index.html">Acceuil</a></li>
+            <li><a href="programme.html">Programme</a></li>
+            <li><a href="intervenants.html">Intervenant</a></li>
+            <li><a href="contact.html">Inscription & Contact</a></li>
+            
+        </ul>
+    </div>
   <div>
+    <h4>Suivez-nous :</h4>
    <a href=""><i class="bi bi-twitter-x"></i></a>
    <a href=""><i class="bi bi-facebook"></i></a>
    <a href=""><i class="bi bi-threads"></i></a>
   </div>
-  <div>
+  
+  </div>
+  <hr>
+  <div class="copy">
     <p>&Copyright 2026 AfriconnectSummit.Tous droits réservés.</p>
   </div>
-  <button><i class="bi bi-arrow-up-circle "></i></button>
 </footer>
+</section>
  
  <!-- Votre script JavaScript -->
  <script src="js/main.js"></script>
