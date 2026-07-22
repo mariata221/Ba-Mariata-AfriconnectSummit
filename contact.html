@@ -4,7 +4,7 @@
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>AfriconnectSummit</title>
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css" >
  
  <!-- Votre feuille de style personnelle -->
  <link rel="stylesheet" href="css/style.css">
@@ -13,17 +13,15 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section class="fil-ariane">
-    <header class="nav-bar">
+   
+    <header>
   <nav>
     <h2 class="logo"><i>AfriconnectSummit 2026</i></h2>
-    <div>
+    
     <button class="navbar-toggle">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
+         <i class="bi bi-list"></i>
     </button>
-    </div>
+    
     <div class="linkNav">
     <ul>
         <li><a href="index.html">Acceuil</a></li>
@@ -37,10 +35,11 @@
   </nav>
   </header>
  <!-- Le contenu de la page sera ajoute ici -->
+  <section class="fil-ariane">
  
     <div class="ariane">
         <div class="fil">
-            <a href="index.html">Acceuil</a> <span> <span class="pro">Contact</span>
+            <a href="index.html">Acceuil</a>   <span class="pro">Contact</span>
         </div>
         <h1>Réserver votre place au sommet.</h1>
     </div>
@@ -54,6 +53,7 @@
     
         <div class="infos">
             <h2>Nos Informations</h2>
+            <hr class="inf">
 
             <div>
                 <p ><b> <i class="bi bi-envelope-arrow-down-fill"></i> Email :</b> contacthello@AfriconnectSummit.com</p>
@@ -63,23 +63,24 @@
 
         </div>
     
-<form action="">
+<form>
     
         <h2>Inscription</h2>
+        
     
     <div>
-         <label for="">Nom complet</label>
-        <input type="text">
+         <label for="nom">Nom complet</label>
+        <input type="text" id="nom">
     </div>
 
     <div>
-        <label for="">Email</label>
-        <input type="email">
+        <label for="email">Email</label>
+        <input type="email" id="email">
     </div>
 
     <div>
-        <label for="">Téléphone</label>
-        <input type="text">
+        <label for="telephone">Téléphone</label>
+        <input type="text" id="telephone">
     </div>
 
     <div>
@@ -137,6 +138,7 @@
     <div class="question-reponse">
     <div class="title-faq">
         <h2>Questions fréquentes</h2>
+        <hr>
     </div>
     <div class="Questions">
         <details>
@@ -210,7 +212,8 @@
     </div>
     </div>
  </section>
- <section>
+ <section class="ifra">
+    <h2> Notre localisation</h2>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d507957.05196206475!2d-0.5680515929856614!3d5.937469366093552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x29fae0720199f39d%3A0xc8b513db71d2add4!2sEntrepreneur!5e0!3m2!1sfr!2ssn!4v1783897112514!5m2!1sfr!2ssn" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
  </section>
 
@@ -222,7 +225,7 @@
         <p>Le sommet qui connecte les bâtisseurs de l'Afrique de demain.</p>
     </div>
     <div>
-        <h4>Navigations</h4>
+        <h1>Navigations</h1>
         <ul>
             <li><a href="index.html">Acceuil</a></li>
             <li><a href="programme.html">Programme</a></li>
@@ -232,13 +235,13 @@
         </ul>
     </div>
   <div>
-    <h4>Suivez-nous :</h4>
+    <h1>Suivez-nous :</h1>
    <a href=""><i class="bi bi-twitter-x"></i></a>
    <a href=""><i class="bi bi-facebook"></i></a>
    <a href=""><i class="bi bi-threads"></i></a>
   </div>
   </div>
-  <hr>
+  <hr id="separateur">
   <div class="copy">
     <p>&Copyright 2026 AfriconnectSummit.Tous droits réservés.</p>
   </div>
