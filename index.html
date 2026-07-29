@@ -42,7 +42,7 @@
           <li><a href="contact.html">Inscription & Contact</a></li>
 
         </ul>
-        <button><i class="bi bi-moon-stars-fill"></i></button>
+        <button id="theme-toggle"><i class="bi bi-moon-stars-fill"  id="toggleBtn"></i></button>
       </div>
     </nav>
   </header>
@@ -50,12 +50,12 @@
    <section class="Sect-hero">
   
 
-    <div class="hero-texte">
+    <div class="hero-texte fade-in zoom-in-out-box">
      <div>
       <img src="images/WhatsApp Image .jpeg" alt="">
     </div>
      <div>
-      <h1>Là où l'Afrique connecte ses idées à l'avenir.</h1>
+      <h1><span class="titre-logo">Là où l'Afrique</span> connecte ses idées à l'avenir.</h1>
       <h2>Trois jours de conférences, d'ateliers et de rencontres au Kigali Convention Centre du 18 au 20 septembre 2026, réunissant fondateurs,
         investisseurs et créateurs qui construisent la prochaine décennie technologique du continent..</h2>
         
@@ -67,7 +67,7 @@
       
       </div>
     
-    <div class="conférence-date">
+    <div class="conférence-date zoom-in-out-box">
       
        <div>
         <h3>Commence dans :</h3>
@@ -101,25 +101,25 @@
     <hr>
     <div class="grille">
       <div class="grille1">
-        <span>1200</span>
+        <span class="counter" data-target="1200">0</span>
         <p>Participants</p>
       </div>
       <div class="grille2">
-        <span>48</span>
+        <span class="counter" data-target="48">0</span>
         <p>Intervenants</p>
       </div>
       <div class="grille3">
-        <span>3</span>
+        <span class="counter" data-target="3">0</span>
         <p>Jours</p>
       </div>
       <div class="grille4">
-        <span>12</span>
+        <span class="counter" data-target="12">0</span>
         <p>Pays</p>
       </div>
     </div>
   </section>
 
-  <section class="Sect-participer">
+  <section class="Sect-participer fade-in">
     <h1 class="titre-parti">Pourquoi participer ?</h1>
     <hr>
     <div class="grid">
@@ -144,7 +144,7 @@
     </div>
   </section>
 
-  <section class="Sect-inter">
+  <section class="Sect-inter zoom-in-out-box">
     <h1>Intervenants vedettes</h1>
     <hr>
 
@@ -261,6 +261,9 @@
   <div class="copy">
     <p>&Copyright 2026 AfriconnectSummit.Tous droits réservés.</p>
   </div>
+  <button id="back">
+    <i class="bi bi-arrow-up-circle-fill"></i>
+  </button>
 </footer>
 </section>
 
