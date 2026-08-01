@@ -16,18 +16,19 @@
 
 }
 
-/* DARK MODE */
 
+  /* LE CORPS */
 body{
     font-family: var(--font-corps);
     background: var(--color);
 
    
 }
+/* LES TITRES DES PAGES */
 h1,h2,h3{
     font-family: var(--font-titre);
 }
-
+/* NAVBAR */
 
 nav{
    display: flex;
@@ -39,16 +40,11 @@ nav{
    
    
 }
+/* LES LIENS DU HEADER*/
 .linkNav{
     display: flex;
     align-items: center;
     gap: 2px;
-}
-.linkNav a:hover{
-    background: var(--color-secondaire);
-    border: 2px solid #fff;
-    border-radius: 15px;
-    padding: 10px 10px;
 }
 nav ul{
     width: 500px;
@@ -66,6 +62,15 @@ nav a{
    
    
 }
+ /* LES LIENS DU HEADER AVEC EFFET HOVER*/
+.linkNav a:hover{
+    background: var(--color-secondaire);
+    border: 2px solid #fff;
+    border-radius: 15px;
+    padding: 10px 10px;
+}
+
+/* L ENTTETE DU PAGE */
 header{
     
     color: white;
@@ -90,12 +95,18 @@ header{
 body.dark-mode header{
     background: black;
 }
+/* SECTION HERO */
 body.dark-mode .Sect-hero{
     background: black;
 }
+body.dark-mode .hero-texte{
+    color: white;
+} 
+/* DATE DU CONFERENCE */
 body.dark-mode .conférence-date h3{
     color: white;
 }
+/* SECTION CHIFFRE CLES */
 body.dark-mode .Sect-chiffreclés{
     background: #111111;
 
@@ -103,36 +114,40 @@ body.dark-mode .Sect-chiffreclés{
 body.dark-mode .Sect-chiffreclés h1{
     color: white;
 }
-body.dark-mode .hero-texte{
-    color: white;
-} 
+/* SECTION PRQ PARTICIPER */
 body.dark-mode .Sect-participer{
     background: #111111;
 }
 body.dark-mode .titre-parti{
     color: white;
 }
+/* SECTION INTERVENANT VEDETTE */
 body.dark-mode .Sect-inter{
     background: #111111;
 }
 body.dark-mode .Sect-inter h1{
     color: white;
 }
+/* SECT SPONSOR */
 body.dark-mode .Sect-sponsor{
     background: var(--color-principal);
-}
-body.dark-mode .sect-footer{
-    background: black;
 }
 body.dark-mode .Sect-sponsor h1{
     color: white;
 }
+/* SECTION FOOTER */
+body.dark-mode .sect-footer{
+    background: black;
+}
+/* NAVBAR SCROLLE */
 body.dark-mode nav.scrolled{
     background: var(--color-principal);
 }
+/* FIL DARIANE */
 body.dark-mode .fil-ariane{
     background: #111111;
 }
+/* TABLEAU DES PROGRAMMES */
 body.dark-mode .planning{
     background: #111111;
    margin-bottom: 60px;
@@ -146,22 +161,28 @@ body.dark-mode .tableau{
 body.dark-mode .table-scroll{
     margin-bottom: 50px;
 }
- 
+body.dark-mode tbody tr{
+    background: white;
+ }
+ body.dark-mode  tbody tr:nth-child(even){
+    background: #f3f3f3 ;
+}
+body.dark-mode .titre-planning h2{
+    margin-top: 0;
+}
+  /* QUATRE THEME */
   body.dark-mode .sect-thema{
     background: #111111;
     padding-top: 0;
   } 
   body.dark-mode .sect-thema h1{
     color: white;
-    
-   
-  }
- body.dark-mode tbody tr{
-    background: white;
- }
- body.dark-mode  tbody tr:nth-child(even){
-    background: #f3f3f3 ;
 }
+  body.dark-mode .sect-thema h1{
+    padding-top: 0;
+}
+  /* SECTION INTERVENANT */
+ 
 body.dark-mode .sect-intervenants{
     background: #111111;
     
@@ -174,12 +195,8 @@ body.dark-mode .carte{
     margin-bottom: 2em;
 }
 
-body.dark-mode .titre-planning h2{
-    margin-top: 0;
-}
-body.dark-mode .sect-thema h1{
-    padding-top: 0;
-}
+
+ /* SECTION CONTACT */
 body.dark-mode .sect-contact{
     background: #111111;
    padding-top: 0;
@@ -262,10 +279,12 @@ nav.scrolled{
     transform: translateY(30px);
     transition: opacity 0.7s ease, transform 0.7s ease;
 } 
+/* ANIMATIONS FADE IN AU VIEWPORT */
 .fade-in.visible {
     opacity: 1;
     transform: translateY(0);
 }
+/* AMIMATION ZOOM IN AU VIEWPORT */
 .zoom-in-out-box{
     /* margin: 340px;
     width: 50px;
@@ -294,6 +313,7 @@ nav.scrolled{
     background: var(--color-secondaire); 
    border: none;
 } */
+ /* ICONS DU MENU HAMBURGER */
 #theme-toggle{
      width: 90px;
     border-radius: 15px;
@@ -308,25 +328,13 @@ nav.scrolled{
     /* color: white; */
     color: var(--color-principal);
 }
+/* LOGO */
 .logo{
     font-family: Bodoni;
     /* color: var(--color-secondaire); */
 }
 
-.nav-bar{
-    color: white;
-    background: transparent;
-    box-shadow: 0 10px 20px rgba(0, 0,0, 0.5);
-    backdrop-filter: blur(10px);
-    z-index: 999;
-    background: linear-gradient(to bottom,#000f33,#0186ff);
-     position: relative;
-   border-radius: 60px;
-   border: 0.5px solid #ccc;
-   position: fixed;
-   top: 0;
-   width: 100%;
-}
+/* BOUTON MENU HAMBURGER */
 .navbar-toggle{
     display: none;
     width: 35px;
@@ -398,7 +406,7 @@ nav.scrolled{
      margin-left: 10px;
     
 }
-
+/* BOUTON CTA */
 .lien a{
     color: white;
     text-decoration: none;
@@ -1189,23 +1197,7 @@ input.valide, select.valide, textarea.valide {
     margin-bottom: 20px;
     text-align: center;
 }
-/* #container-form form > div span[id ^="erreur-"] {
-    flex-basis: 100%;
-    color: red;
-    font-size: 0.85rem;
-    margin-top: 4px;
-    text-align: right;
-    margin-top: 0;
-    margin-bottom: 3px;
 
-} */
-/* .message-erreur{
-    display: block !important;  
-    flex-basis: 100%;
-    color: red;
-    font-size: 0.85rem;
-    margin-top: 4px;
-} */
 .faq{
     padding: 64px 20px;
     display: flex;

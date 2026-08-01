@@ -137,83 +137,7 @@ filterbuttons.forEach(button => {
   })
 })
 
-// // VALIDATION DU FORMULAIRE
-// console.log("Le script fonctionne")
-// const form = document.getElementById("form");
 
-// form.addEventListener("submit",function(e) {
-//   e.preventDefault();
-//   console.log("Formulaire soumis")
-
-//   let isValid = true;
-
-//   // CHAMPS
-//   const nomcomplet = document.getElementById("nomcomplet");
-//   const telephone = document.getElementById("telephone");
-//   const email = document.getElementById("email");
-//   const sujet = document.getElementById("sujet")
-  
-//   const message = document.getElementById("message");
-
-//   console.log(nomcomplet);
-//   console.log(telephone);
-//   console.log(email);
-//   console.log(message);
-//   console.log(sujet)
-
-//   // MESSAGE D'ERREUR
-//   document.getElementById("erreur-nomcomplet").textContent ="";
-//   document.getElementById("erreur-telephone").textContent ="";
-//   document.getElementById("erreur-email").textContent ="";
-//   document.getElementById("erreur-message").textContent ="";
-//   document.getElementById("erreur-sujet").textContent = "";
- 
-
-//   // VALIDATION nomcomplet
-//   if (nomcomplet.value.trim() === "") {
-//     document.getElementById("erreur-nomcomplet").textContent =" Le nom complet est obligatoire";
-//     isValid = false;
-//   }
-
-
-//   //  REGEX
-//   const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-//   if (email.value.trim() === "") {
-//     document.getElementById("erreur-email").textContent =" L'email est obligatoire";
-//     isValid = false;
-//   } else if (!regexEmail.test(email.value.trim())) {
-    
-//     document.getElementById("erreur-email").textContent ="Format d'email invalide";
-//     isValid = false;
-  
-//   }
-
-
-// // VALIDATION SUJET
-//   if (sujet.value.trim() === "") {
-//     document.getElementById("erreur-sujet").textContent =" Veuillez choisir un sujet";
-//     isValid = false;
-//   }
-// // VALIDATION MESSAGE
-//   if (message.value.trim() === "") {
-//     document.getElementById("erreur-message").textContent =" Le message est obligatoire";
-//     isValid = false;
-//   } else if(message.value.trim().length < 20) {
-//     document.getElementById("erreur-message").textContent =" Le message doit contenir au moins 20 caracteres";
-//     isValid = false;
-//   }
-
-//   // VALIDATION AVEC SUCCES
-//   if (isValid) {
-//     document.getElementById("succes-message")
-//     form.reset();
-//     setTimeout(() => {
-//       document.getElementById("succes-message")
-//     }, 5000 );
-    
-//   }
-// });
 
 
   // FILTRAGES DES TABLEAU DE PLANNING DES PROGRAMME
@@ -280,7 +204,7 @@ if (elJours && elHeures && elMinutes && elSecondes) {
 }
 })
 
-
+// VALIDATION DU FORMULAIRE
 
 document.addEventListener("DOMContentLoaded", function() {
     
