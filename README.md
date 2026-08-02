@@ -17,9 +17,13 @@ Site web vitrine pour *AfriconnectSummit*, un sommet panafricain de 3 jours (18�
 
 
 ## 📋 Aperçu du site
+   # Page d'acceuil (index.html)
 ![Accueil](images/index.png)
+   # Programme (prgramme.html)
 ![Programme](images/progra.png)
+   # Intervenant (intervenant.html)
 ![Intervenant](images/intervena.png)
+   # Contact (inscription et contact)
 ![Contact ](images/contac.png)
 
 Le site est composé de 4 pages HTML statiques, stylées avec un CSS unique et animées via un script JavaScript commun :
@@ -40,16 +44,61 @@ Le site est composé de 4 pages HTML statiques, stylées avec un CSS unique et a
 - **Compteurs animés** déclenchés à l'entrée dans le viewport (`IntersectionObserver`)
 
 ## 📁 Structure du projet
-├── index.html
-├── programme.html
-├── intervenants.html
-├── contact.html
-├── css/
-│   └── style.css
-├── js/
-│   └── main.js
-└── images/
-└── … (photos des intervenants, sponsors, visuels hero)
+C:.
+│   contact.html
+│   index.html
+│   intervenants.html
+│   programme.html
+│   README.md
+│
+├───css
+│       style.css
+│
+├───images
+│       1.jpeg
+│       10.jpeg
+│       100.jpeg
+│       101.jpeg
+│       102.jpeg
+│       103jpeg.jpeg
+│       104.jpeg
+│       11.jpeg
+│       12.jpeg
+│       13.jpeg
+│       14.jpeg
+│       15.jpeg
+│       16.jpeg
+│       17.jpeg
+│       18.jpeg
+│       19.jpeg
+│       2.jpeg
+│       20.jpeg
+│       21.jpeg
+│       22.jpeg
+│       23.jpeg
+│       24.jpeg
+│       25.jpeg
+│       26.jpeg
+│       27.jpeg
+│       28.jpeg
+│       3.jpeg
+│       4.jpeg
+│       5.jpeg
+│       6.jpeg
+│       7.jpeg
+│       8.jpeg
+│       80.jpeg
+│       9.jpeg
+│       contac.png
+│       index.png
+│       intervena.png
+│       logo.jpeg
+│       progra.png
+│       video.mp4
+│       WhatsApp Image .jpeg
+│
+└───js
+        main.js
 
 ## ✨ Fonctionnalités
 
@@ -72,6 +121,14 @@ Le site est composé de 4 pages HTML statiques, stylées avec un CSS unique et a
 - Google Fonts : Poppins, Roboto, Open Sans, Inter
 - Google Maps (iframe intégré) pour la localisation
 
+## 📚 Ressources et documentation utilisées
+
+- [MDN Web Docs](https://developer.mozilla.org/fr/) — référence HTML / CSS / JavaScript
+- [Documentation Bootstrap Icons](https://icons.getbootstrap.com/) — iconographie du site
+- [Google Fonts](https://fonts.google.com/) — polices Poppins, Roboto, Open Sans, Inter
+- [Can I Use](https://caniuse.com/) — compatibilité navigateurs
+- [Stack Overflow](https://stackoverflow.com/) — débogage ciblé
+
 ## 🚀 Installation / utilisation
 
 Aucune dépendance ni build n'est nécessaire, il s'agit d'un site statique.
@@ -80,3 +137,6 @@ Aucune dépendance ni build n'est nécessaire, il s'agit d'un site statique.
 2. Ouvrir index.html dans un navigateur, ou servir le dossier avec un serveur local, par exemple :
    ```bash
       git clone  https://github.com/mariata221/Ba-Mariata-AfriconnectSummit.git
+
+      ## 📄 Licence
+© 2026 AfriconnectSummit. Tous droits réservés
